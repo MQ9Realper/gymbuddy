@@ -1,7 +1,8 @@
-package com.gymbuddy.gymbuddy;
+package com.gymbuddy.gymbuddy.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import com.gymbuddy.gymbuddy.R;
 
 public class MainActivity extends AppCompatActivity {
 
