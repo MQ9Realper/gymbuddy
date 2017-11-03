@@ -1,4 +1,4 @@
-package com.safiree.safiree.views;
+package com.gymbuddy.gymbuddy.views;
 
 import android.content.Context;
 import android.graphics.Canvas;

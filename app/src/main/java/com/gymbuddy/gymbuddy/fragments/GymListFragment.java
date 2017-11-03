@@ -14,12 +14,10 @@ import com.gymbuddy.gymbuddy.R;
  */
 public class GymListFragment extends Fragment {
 
-
     public GymListFragment() {
         // Required empty public constructor
     }
-
-
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
