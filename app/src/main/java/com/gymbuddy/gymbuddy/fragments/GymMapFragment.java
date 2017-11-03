@@ -35,6 +35,7 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         locations = new ArrayList<>();
         locations.add(new LatLng(25.1574695,55.2865913)); //Body & Soul Health Club, Dubai
@@ -51,6 +52,7 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback {
         locationTitles.add("Gold's Gym");
         locationTitles.add("Target Gym");
         locationTitles.add("Train Strength & Fitness");
+
         return inflater.inflate(R.layout.fragment_gym_map, container, false);
     }
 
