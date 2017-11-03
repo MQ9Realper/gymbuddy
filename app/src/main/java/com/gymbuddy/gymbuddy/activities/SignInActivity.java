@@ -9,8 +9,9 @@ import android.view.WindowManager;
 
 import com.gymbuddy.gymbuddy.R;
 import com.gymbuddy.gymbuddy.utils.UniversalUtils;
+import com.gymbuddy.gymbuddy.views.Btn;
 
-public class SignInActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity implements View.OnClickListener {
     private UniversalUtils universalUtils;
 
     @Override
@@ -21,6 +22,8 @@ public class SignInActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         initToolbar();
+
+        initViews();
     }
 
     private void initToolbar() {
@@ -37,5 +40,24 @@ public class SignInActivity extends AppCompatActivity {
         });
         universalUtils.centerToolbarTitle(toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    private void initViews(){
+        Btn btnSignIn = (Btn) findViewById(R.id.btnCompleteSignIn);
+
+        btnSignIn.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btnCompleteSignIn:
+                Intent intent = new Intent(SignInActivity.this, DashboardActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            default:
+                break;
+        }
     }
 }
