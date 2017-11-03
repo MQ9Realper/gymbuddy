@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GymBuddy</string>
+    <string name="string_website"><b><u>www.gymbuddy.com</u></b></string>
+    <string name="string_terms">I accept <u><b>Terms &amp; Conditions</b></u></string>
 </resources>
