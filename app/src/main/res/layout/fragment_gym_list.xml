@@ -2,8 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorWhite"
-    tools:context="com.gymbuddy.gymbuddy.fragments.GymListFragment">
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
+    <com.gymbuddy.gymbuddy.views.Edt
+        android:id="@+id/edtSearchGym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/drawable_edittext"
+        android:hint="@string/hint_search_gym"
+        android:padding="10dp" />
+
+    <ListView
+        android:id="@+id/listViewGym"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:divider="@null" />
 </LinearLayout>

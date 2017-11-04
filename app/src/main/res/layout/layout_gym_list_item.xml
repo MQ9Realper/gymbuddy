@@ -38,8 +38,8 @@
             style="?android:attr/ratingBarStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
             android:backgroundTint="@color/colorAccent"
             android:numStars="5" />
 
@@ -47,6 +47,8 @@
             android:id="@+id/txtGymLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:text="Business Central Towers A Level 7"
